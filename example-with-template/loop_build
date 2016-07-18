@@ -1,0 +1,8 @@
+# Build it and run locally with gulp, rebuild with Ctrl+C
+while true; do
+  npm install
+  ./node_modules/bower/bin/bower install
+  ./node_modules/gulp/bin/gulp.js
+  sleep 2
+  echo '---------------------------'
+done
