@@ -59,6 +59,7 @@ Hi!
          "One Questions Survey": 10
      }
 ```
+
    - **Two Time Series Graphs**
      - Each graph should take half of the width
      - Each graph will have just one data area
@@ -121,8 +122,8 @@ Hi!
 
 ```
 
-## Thats' it!
+**Thats it!**
 
 Thank you very much - you can always reach me through amir@insert.io
 
-[this file]: <https://github.com/amir-mehler/plant/blob/master/example-with-template/production/index.html>
+[production/index.html]: <https://github.com/amir-mehler/plant/blob/master/example-with-template/production/index.html>
