@@ -3,7 +3,7 @@
 Hi!
 
  - Here you can find the static html example I did with the template
- - If you can run it and view [production/index.html] in your browser then you will see the mock
+ - If you can run it and view production/[index.html] in your browser then you will see the mock
  - I will now describe the specifications and API calls (I'll try to keep it simple)
    - **Sidebar**: I need the Welcome div, Home menu and 'Production-US' underneath, which is the home page.
    - **Body**:
@@ -126,4 +126,4 @@ Hi!
 
 Thank you very much - you can always reach me through amir@insert.io
 
-[production/index.html]: <https://github.com/amir-mehler/plant/blob/master/example-with-template/production/index.html>
+[index.html]: <https://github.com/amir-mehler/plant/blob/master/example-with-template/production/index.html>
