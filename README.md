@@ -90,37 +90,38 @@ Hi!
          {
            "Thu": 430
          }
-      ]
-    }
+       ]
+     }
 
-    $ http https://92g6bt7bib.execute-api.us-east-1.amazonaws.com/dev/total-push-sent-last-7-days
-    {
-      "array": [
-        {
-          "Wed": 250
-        },
-        {
-          "Tue": 800
-        },
-        {
-          "Mon": 120
-        },
-        {
-          "Sun": 1200
-        },
-        {
-          "Sat": 300
-        },
-        {
-          "Fri": 900
-        },
-        {
-          "Thu": 400
-        }
-      ]
-    }
+     $ http https://92g6bt7bib.execute-api.us-east-1.amazonaws.com/dev/total-push-sent-last-7-days
+     {
+       "array": [
+         {
+           "Wed": 250
+         },
+         {
+           "Tue": 800
+         },
+         {
+           "Mon": 120
+         },
+         {
+           "Sun": 1200
+         },
+         {
+           "Sat": 300
+         },
+         {
+           "Fri": 900
+         },
+         {
+           "Thu": 400
+         }
+       ]
+     }
 
 ```
+
 
 **Thats it!**
 
