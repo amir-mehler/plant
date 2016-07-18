@@ -5,19 +5,16 @@ Hi!
  - Here you can find the static html example I did with the template
  - If you can run it and view [production/index.html] in your browser then you will see the mock
  - I will now describe the specifications and API calls (I'll try to keep it simple)
-   - **Sidebar**: I need the Welcome div, Home menu and 'Production-US' underneath
+   - **Sidebar**: I need the Welcome div, Home menu and 'Production-US' underneath, which is the home page.
    - **Body**:
      - 5 Numerical values (each should take a fith of the width)
        - Titles: MAU, Registerd Devices, Companies in Production, Active Trials, Active Inserts, Applications
        - Please use the font-awesome icons I used
        - All numbers can be grey
        - Remove the '^ 4% From last week' titles
-       - All values will be returned in one json with this API call
+       - All values will be returned in one json with this API GET call
        ```sh
        $ http https://92g6bt7bib.execute-api.us-east-1.amazonaws.com/dev/scalars
-       HTTP/1.1 200 OK
-       Content-Type: application/json
-
        {
            "active-inserts": 148,
            "active-trials": 47,
@@ -27,12 +24,12 @@ Hi!
            "registered-devices": 25947
       }
 ```
-   - **3 Top 5 graphs**:
+   - **Three "Top 5" graphs**:
      - Each should take a third of the width
-     - Device Types Doughnut graph gets unsorted data, key and value json. Keep Title and subtitle: 'Device Types' and 'top 5'. No need for the 'Device/Progress' text.
+     - Device Types Doughnut graph gets unsorted data, key and value json. Keep title and subtitle: 'Device Types' and 'top 5'. No need for the 'Device/Progress' text.
      - SDK Versions bars, key and value json, data **needs** to be sorted. Title 'Top SDK Versions'. No need for subtitle.
-     - Insert Types Doughnut graph - same as 'Deice Types'
-     - API Calls:
+     - Insert Types Doughnut graph - same as 'Device Types'
+     - API Calls (GET):
      ```sh
 
      $ http https://92g6bt7bib.execute-api.us-east-1.amazonaws.com/dev/top5-device-types
@@ -62,11 +59,11 @@ Hi!
          "One Questions Survey": 10
      }
 ```
-   - **Time Series Graphs**
+   - **Two Time Series Graphs**
      - Each graph should take half of the width
-     - Each graph will have just one line
+     - Each graph will have just one data area
      - The data returned from the API will include a **sorted array** starting from the present day moving backwards
-     - API Calls:
+     - API Calls (GET):
      ```sh
      $ http https://92g6bt7bib.execute-api.us-east-1.amazonaws.com/dev/total-impressions-last-7-days
      {
